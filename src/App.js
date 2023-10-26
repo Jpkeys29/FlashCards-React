@@ -44,6 +44,14 @@ const questions = [
   }
 ];
 
+
+
 function FlashCards(){
-  return <div>Vamos con Toda!</div>
+  return (
+    <div className="flashcards">
+      {
+        questions.map((question) => (<div key={question.id}><p>{question.question} </p></div>))
+      }
+    </div>
+  )
 }
